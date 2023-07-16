@@ -1,10 +1,10 @@
 import user from './DataJSON/user.json';
 import data from './DataJSON/data.json';
-// import friends from './DataJSON/friends';
+import friends from './DataJSON/friends.json';
 
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
-// import FriendList from './FriendList/FriendList';
+import FriendList from './FriendList/FriendList';
 
 export const App = () => {
   return (
@@ -21,6 +21,10 @@ export const App = () => {
       <div className="mySections">
         {' '}
         <Statistics title="Upload stats" stats={data} />
+      </div>
+      <div className="mySection">
+        {' '}
+        <FriendList friends={friends} />
       </div>
     </div>
   );
